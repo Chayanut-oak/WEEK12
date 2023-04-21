@@ -46,6 +46,7 @@
                     <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
                   </figure>
                 </div>
+                
                 <div v-if="index===editToggle" class="media-content">
                   <div class="content">
                     <input v-model="editCommentMessage" class="input" type="text" />

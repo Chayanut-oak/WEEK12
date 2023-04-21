@@ -32,7 +32,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-router.put("/blogs/addlike/:id", async function (req, res, next) {
+router.put("/blogs/addlike/:id",isLoggedIn, async function (req, res, next) {
   const conn = await pool.getConnection();
   // Begin transaction
   await conn.beginTransaction();

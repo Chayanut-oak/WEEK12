@@ -82,6 +82,7 @@ export default {
       })
     },logout(){
       localStorage.removeItem("token")
+      this.user = null
     }
   }
 }
